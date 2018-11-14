@@ -37,7 +37,7 @@ O módulo deverá exibir todos os comunicados disponíveis para aquele usuário.
 - Seu código deve ser coberto por testes de unidade, utilize qualquer framework de teste (Jest, Mocha, Jasmine etc)
 
 ### Passo-a-passo
-1. Faça um **fork** deste repositório para sua conta pessoal do github
+1. Faça um **fork** deste repositório para sua conta pessoal do gitlab
 2. Clone o projeto
     ``git clone url``
 3. Instale as dependências
@@ -45,7 +45,7 @@ O módulo deverá exibir todos os comunicados disponíveis para aquele usuário.
 4. Inicie o servidor fake
     ``npm run server``
 
-Ao terminar faça um pull request! :octocat:
+Ao terminar faça um pull request!
 > 💡 Caso tenha dúvida não deixe de perguntar
 
 ### Dicas
