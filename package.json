@@ -20,7 +20,9 @@
     "webpack-dev-server": "^3.2.1"
   },
   "scripts": {
-    "server": "json-server --watch ./endpoints/db.json -p 3000 --static ./endpoints/files"
+    "server": "json-server --watch ./endpoints/db.json -p 3000 --static ./endpoints/files",
+    "dev-app": "webpack-dev-server --mode development",
+    "production-app": "rimraf dist && webpack --mode production",
   },
   "repository": {
     "type": "git",
