@@ -6,20 +6,13 @@
       v-for="comunicate in comunicates"
       v-bind:style="colorBorder(comunicate.type)"
       v-if="comunicate.type == 3">
-      <div class="comunicate-top-data">
-        <span class="title">{{ comunicate.title }}</span>
-        <span class="id">{{ comunicate.id }}</span>
-      </div>
-      <div class="comunicate-bottom-data">
-        <span class="typeName">{{ comunicateTypes[comunicate.type].name }}</span>
-        <span class="date">{{ formatDateBr(comunicate.date) }}</span>
-      </div>
+      <Comunicate :comunicate="comunicate" :comunicateTypes="comunicateTypes"/>
     </div>
   </div>
 </template>
 <script>
 import { comunicados, tiposComunicados } from "../../endpoints/db.json";
-import moment from 'moment';
+import Comunicate from './Comunicate.vue';
 export default {
   data() {
     return {
@@ -44,7 +37,10 @@ export default {
       formatDateBr(date) {
         return moment(String(date)).format('DD/MM/YYYY - hh[h]mm')
       }
-    };
+    }
+  },
+  components: {
+    Comunicate
   }
 };
 </script>
