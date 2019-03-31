@@ -5,7 +5,7 @@ import ConnectedVivo from '../Components/ConnectedVivo.vue';
 import TurbineSales from '../Components/TurbineSales.vue';
 
 const routes = [
-    { path: '/', component: Home },
+    { path: '/', name: 'home', component: Home },
     { path: '/sun-informations', name: 'sunInformations', component: SunInformations, props: true },
     { path: '/sales-force', name: 'salesForce', component: SalesForce, props: true },
     { path: '/connected-vivo', name: 'connectedVivo', component: ConnectedVivo, props: true },
