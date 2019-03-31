@@ -6,45 +6,79 @@
     max-height: 76%;
     padding-left: 15px;
     padding-right: 15px;
+
     .comunicate {
-      word-break: break-word;
-      .comunicate-top-data {
+        word-break: break-word;
+        .files {
+          display: block;
+          border: 2px solid #ebebeb;
+          border-radius: 0.5em;
+          padding: 5px;
+          padding-right: 15px;
           min-height: 42px;
-            display: block;
-        .title {
-            max-width: 70%;
-          white-space:normal;
-          display: inline-block;
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-        .id {
-            float: right;
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 10px;
+          margin-bottom: 20px;
+          .url-content {
+            float: left;
+            margin-left: 15px;
+            color: #bababa;
+            padding-top: 15px;
           }
-      }
-      .comunicate-bottom-data {
-        float: bottom;
-        display: block;
-        .typeName {
-          display: inline-block;
-          font-size: 12px;
-        }
-        .date {
+          .download-content {
+            padding-top: 10px;
             float: right;
-            font-size: 12px;
+            svg {
+              display: inline-block;
+              font-size: 25px;
+            }
+          }
+          svg {
+            float: left;
+            font-size: 45px;
+          }
         }
-      }
-      color: #5a5a5a;
-      border-radius: 0.2em;
-      background-color: #ffff;
-      padding: 10px;
-      margin-bottom: 20px;
-      -webkit-box-shadow: -1px 6px 10px -2px #edecee;
-      -moz-box-shadow: -1px 6px 10px -2px #edecee;
-      box-shadow: -1px 6px 10px -2px #edecee;
+        .comunicate-top-data {
+            min-height: 42px;
+            display: block;
+
+            .title {
+                max-width: 70%;
+                white-space: normal;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .id {
+                float: right;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+
+        .comunicate-bottom-data {
+            float: bottom;
+            display: block;
+
+            .typeName {
+                display: inline-block;
+                font-size: 12px;
+            }
+
+            .date {
+                float: right;
+                font-size: 12px;
+            }
+        }
+
+        color: #5a5a5a;
+        border-radius: 0.2em;
+        background-color: #ffff;
+        padding: 10px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: -1px 6px 10px -2px #edecee;
+        -moz-box-shadow: -1px 6px 10px -2px #edecee;
+        box-shadow: -1px 6px 10px -2px #edecee;
     }
-  }
+}

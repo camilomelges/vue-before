@@ -4,10 +4,33 @@
       class="comunicate"
       v-bind:key="comunicate.id"
       v-for="comunicate in comunicates"
-      v-bind:style="colorBorder(comunicate.type)">
+      v-bind:style="colorBorder(comunicate.type)"
+      v-bind:title="comunicate.description"
+      >
       <div class="comunicate-top-data">
         <span class="title">{{ comunicate.title }}</span>
         <span class="id">{{ comunicate.id }}</span>
+      </div>
+      <div v-if="comunicate.files">
+        <div v-if="comunicate.files.length > 0">
+          <div
+            class="files"
+            v-bind:key="file.name"
+            v-for="file in comunicate.files"
+            v-if="file.type == 'pdf/*'">
+            <div v-if="file.type == 'pdf/*'">
+              <font-awesome-icon :icon="['far', 'file-pdf']"/>
+              <div class="url-content">
+                <span>
+                  {{ file.url }}
+                </span>
+              </div>
+              <div class="download-content">
+                <font-awesome-icon stlye="float: right" :icon="['fas', 'cloud-download-alt']"/>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="comunicate-bottom-data">
         <span class="typeName">{{ comunicateTypes[comunicate.type].name }}</span>
