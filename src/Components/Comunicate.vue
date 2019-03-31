@@ -1,5 +1,6 @@
 <template>
-  <div id="comunicate" @click="$modal.show(comunicate.id.toString())">
+  <div id="comunicate">
+    <router-link :to="{ name: 'comunicate', params: { comunicateId: comunicate.id }}" >
     <div class="comunicate-top-data">
       <span class="title">{{ comunicate.title }}</span>
       <span class="id">{{ comunicate.id }}</span>
@@ -28,6 +29,7 @@
       <span class="typeName">{{ comunicateTypes[comunicate.type].name }}</span>
       <span class="date">{{ formatDateBr(comunicate.date) }}</span>
     </div>
+    </router-link>
   </div>
 </template>
 
@@ -43,14 +45,8 @@ export default {
     return {
       formatDateBr(date) {
         return moment(String(date)).format("DD/MM/YYYY - hh[h]mm");
-      },
-      modalShow(comunicateId) {
-        $modal.show(comunicateId);
-      },
-      modalHide() {
-        $modal.hide(comunicateId);
       }
-    };
+    }
   }
 };
 </script>

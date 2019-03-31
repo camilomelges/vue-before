@@ -27,7 +27,7 @@
           <router-link :to="{ name: 'turbineSales' }">Turbine suas vendas</router-link>
         </div>
       </nav>
-      <router-view id="teste"/>
+      <router-view/>
     </section>
   </div>
 </template>

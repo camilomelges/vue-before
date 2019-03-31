@@ -6,7 +6,7 @@
       v-for="comunicate in comunicates"
       v-bind:style="colorBorder(comunicate.type)"
       v-bind:title="comunicate.description">
-      <Comunicate :comunicate="comunicate" :comunicateTypes="comunicateTypes"/>
+        <Comunicate :comunicate="comunicate" :comunicateTypes="comunicateTypes"/>
     </div>
   </div>
 </template>

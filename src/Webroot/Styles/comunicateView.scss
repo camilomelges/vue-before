@@ -1,0 +1,119 @@
+@keyframes example {
+    from {
+        background-position: 0 -100019px;
+    }
+
+    to {
+        background-position: -100000px 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+$screen-md-min: 768px;
+
+@media (max-width: #{$screen-md-min}) {
+    .m-t-15p {
+        padding-top: 40%;
+    }
+}
+
+.comunicatesView {
+    background-color: #f7f7f7;
+    height: 76%;
+    max-height: 76%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .comunicateView {
+        color: #ffff;
+        height: 100%;
+        overflow: hidden;
+        background: #2f212178 url('https://logodownload.org/wp-content/uploads/2014/02/vivo-logo-1.png') repeat 0 0;
+        background-size: cover;
+        -webkit-animation: example 5000s linear infinite;
+        box-sizing: border-box;
+        
+        border-radius: 0.2em;
+        background-color: #2f212178;
+        padding: 10px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: -1px 6px 10px -2px #edecee;
+        -moz-box-shadow: -1px 6px 10px -2px #edecee;
+        box-shadow: -1px 6px 10px -2px #edecee;
+
+        .files {
+            display: block;
+            border: 2px solid #ebebeb;
+            border-radius: 0.5em;
+            padding: 5px;
+            padding-right: 15px;
+            min-height: 42px;
+            margin-bottom: 20px;
+
+            .url-content {
+                float: left;
+                margin-left: 15px;
+                color: #bababa;
+                padding-top: 15px;
+            }
+
+            .download-content {
+                padding-top: 10px;
+                float: right;
+
+                svg {
+                    display: inline-block;
+                    font-size: 25px;
+                }
+            }
+
+            svg {
+                float: left;
+                font-size: 45px;
+            }
+        }
+
+        .comunicate-top-data {
+            min-height: 42px;
+            display: block;
+
+            .title {
+                max-width: 70%;
+                white-space: normal;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .id {
+                float: right;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+
+        .comunicate-bottom-data {
+            float: bottom;
+            display: block;
+
+            .typeName {
+                display: inline-block;
+                font-size: 12px;
+            }
+
+            .date {
+                float: right;
+                font-size: 12px;
+            }
+        }
+    }
+}
