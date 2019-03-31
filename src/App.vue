@@ -5,18 +5,10 @@
         <font-awesome-icon icon="bars"/>
       </button>
       <ul class="col-md-2 col-sm-6 header-menu">
-        <li>
-          <router-link to="/sun-informations">Informativos SUN</router-link>
-        </li>
-        <li>
-          <router-link to="/sales-force">Força de Vendas</router-link>
-        </li>
-        <li>
-          <router-link to="/connected-vivo">Vivo Ligado</router-link>
-        </li>
-        <li>
-          <router-link to="/turbine-sales">Turbine suas vendas</router-link>
-        </li>
+        <li><router-link :to="{ name: 'sunInformations', params: 0 }">Informativos SUN</router-link></li>
+        <li><router-link :to="{ name: 'salesForce', params: 1 }">Força de Vendas</router-link></li>
+        <li><router-link :to="{ name: 'connectedVivo', params: 2 }">Vivo Ligado</router-link></li>
+        <li><router-link :to="{ name: 'turbineSales', params: 3 }">Turbine suas vendas</router-link></li>
       </ul>
       <span>Comunicados</span>
       <button class="float-right">
@@ -27,10 +19,10 @@
       <nav>
         <span>Categorias</span>
         <div class="handout-types">
-          <router-link to="/sun-informations">Informativos SUN</router-link>
-          <router-link to="/sales-force">Força de Vendas</router-link>
-          <router-link to="/connected-vivo">Vivo Ligado</router-link>
-          <router-link to="/turbine-sales">Turbine suas vendas</router-link>
+          <router-link :to="{ name: 'sunInformations', params: 0 }">Informativos SUN</router-link>
+          <router-link :to="{ name: 'salesForce', params: 1 }">Força de Vendas</router-link>
+          <router-link :to="{ name: 'connectedVivo', params: 2 }">Vivo Ligado</router-link>
+          <router-link :to="{ name: 'turbineSales', params: 3 }">Turbine suas vendas</router-link>
         </div>
       </nav>
       <router-view id="teste"/>

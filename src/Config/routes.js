@@ -6,10 +6,10 @@ import TurbineSales from '../Components/TurbineSales.vue';
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/sun-informations', component: SunInformations },
-    { path: '/sales-force', component: SalesForce },
-    { path: '/connected-vivo', component: ConnectedVivo },
-    { path: '/turbine-sales', component: TurbineSales },
+    { path: '/sun-informations', name: 'sunInformations', component: SunInformations, props: true },
+    { path: '/sales-force', name: 'salesForce', component: SalesForce, props: true },
+    { path: '/connected-vivo', name: 'connectedVivo', component: ConnectedVivo, props: true },
+    { path: '/turbine-sales', name: 'turbineSales', component: TurbineSales, props: true },
 ];
 
 export default routes;
