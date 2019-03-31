@@ -1,6 +1,6 @@
 <template>
     <div>
-        Home
+        ConnectedVivo
     </div>
 </template>
 <script>

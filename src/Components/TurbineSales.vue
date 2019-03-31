@@ -1,6 +1,6 @@
 <template>
     <div>
-        Home
+        TurbineSales
     </div>
 </template>
 <script>

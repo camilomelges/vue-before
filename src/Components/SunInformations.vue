@@ -1,6 +1,6 @@
 <template>
     <div>
-        Home
+        SunInformations
     </div>
 </template>
 <script>

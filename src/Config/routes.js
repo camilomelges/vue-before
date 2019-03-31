@@ -3,6 +3,7 @@ import SunInformations from '../Components/SunInformations.vue';
 import SalesForce from '../Components/SalesForce.vue';
 import ConnectedVivo from '../Components/ConnectedVivo.vue';
 import TurbineSales from '../Components/TurbineSales.vue';
+
 const routes = [
     { path: '/', component: Home },
     { path: '/sun-informations', component: SunInformations },
