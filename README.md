@@ -41,9 +41,11 @@ O módulo deverá exibir todos os comunicados disponíveis para aquele usuário.
 2. Clone o projeto
     ``git clone url``
 3. Instale as dependências
-    ``npm install``
+    ``npm install ou yarn install``
 4. Inicie o servidor fake
-    ``npm run server``
+    ``npm run server ou yarn server``
+5. Inicie o from-end
+    ``npm run dev-app ou yarn dev-app``
 
 Ao terminar faça um pull request!
 > 💡 Caso tenha dúvida não deixe de perguntar

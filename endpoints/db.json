@@ -16,7 +16,14 @@
             "type": 1,
             "description": "Planos controle 5GB de internet 4G.",
             "fullDescription":"Ligações ilimitadas locais para todas as operadoras. Ligações ilimitadas pra fixos nacional e qualquer Vivo do Brasil com o código 15. SMS ilimitado para qualquer operadora do Brasil.",
-            "date": "2018-05-02 10:30"
+            "date": "2018-05-02 10:30",
+            "files": [
+                {
+                    "type": "pdf/*",
+                    "name": "Bônus Fevereiro",
+                    "url": "bonus_fevereiro.pdf"
+                }
+            ]
         },
         {
             "id": 3,
@@ -27,6 +34,11 @@
             "fullDescription":"Novos serviços, clique para visualizar o material de divulgação.",
             "date": "2018-05-02 18:30",
             "files": [
+                {
+                    "type": "pdf/*",
+                    "name": "Novos Serviços",
+                    "url": "novos_servicos.pdf"
+                },
                 {
                     "type": "image/*",
                     "name": "Material de divulgação",
